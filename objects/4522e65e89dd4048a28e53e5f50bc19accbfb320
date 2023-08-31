@@ -1,0 +1,12 @@
+[module "c75b3a4b-b19a-340e-9419-c63ac28020f8"]
+	conflict = request-pull
+	path = KeyStore
+	pull = merge rebase
+	pull = squash always
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/685092267
+[map "34cd56a3-d207-387b-8202-ed7d3cd2596b"]
+	object = f65ad6e2cf2e83bd0861b2115a298d2bfb76e32d
+	path = KeyStore
+	stage = sync
+	type = extract module
