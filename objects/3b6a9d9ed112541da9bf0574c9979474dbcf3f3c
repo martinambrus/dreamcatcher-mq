@@ -1,0 +1,23 @@
+[map "cee42179-0538-3702-b390-f47db9dbcc84"]
+	object = efbe41cfd48dd7aa9c952a31571707ee8d7bccf8
+	path = Interfaces
+	type = extract module
+[module "53608f3a-13ca-3189-ada3-48c0a682036c"]
+	conflict = request-pull
+	path = Interfaces
+	pull = merge rebase
+	pull = squash always
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/685035720
+[module "c75b3a4b-b19a-340e-9419-c63ac28020f8"]
+	conflict = request-pull
+	path = KeyStore
+	pull = merge rebase
+	pull = squash always
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/685092267
+[map "4e97213f-a6e1-31f3-a903-c33609be9d36"]
+	object = 14d27d4a63c88bcd01332db5337cdc1dc1dfe038
+	path = KeyStore
+	stage = sync
+	type = extract module
