@@ -14,3 +14,10 @@ jobs:
           token: ${{ secrets.SYNC_REPOS_TOKEN }}
           repository: martinambrus/DreamCatcher
           event-type: sync-keystore-from-mq
+
+      - name: Dispatch sync to dreamcatcher_utils
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.SYNC_REPOS_TOKEN }}
+          repository: martinambrus/dreamcatcher_utils
+          event-type: sync-mq
